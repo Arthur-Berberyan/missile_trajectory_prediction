@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spline Map</title>
+    <link rel="stylesheet" href="./spline-map.css">
+</head>
+<body>
+<div id="header">
+    <h1>Spline Map</h1>
+</div>
+<h3>Click buttons to interact with the map:</h3>
+<div id="map"></div>
+<div class="button-container">
+    <button type="button" onclick="drawPoints(map)" id="points" class="button">Points</button>
+    <button type="button" onclick="drawSpline(map)" id="spline" class="button" style="display: none;"></button>
+    <button type="button" onclick="reset()" id="reset" class="button" style="display: none;">Reset Map</button>
+</div>
+<script src="spline.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyBvYE8q91E9hZStmfs5DwkPQU0aKW-BQ8I"
+        type="text/javascript">
+</script>
+</body>
+</html>

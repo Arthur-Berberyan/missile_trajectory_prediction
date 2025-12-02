@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Change background color to transparent since you'll use a background image */
+    background-color: transparent;
+    /* Use a relative path to refer to the image in the same folder */
+    background-image: url('cloud.jpg');
+    /* Set background size to cover the entire viewport */
+    background-size: cover;
+    /* Center the background image */
+    background-position: center;
+    /* Add a fixed background attachment so the image doesn't scroll with the content */
+    background-attachment: fixed;
+    color: #333;
+}
+
+#header {
+  /* Change header background color to a slightly darker blue  */
+  background-color: #87ceeb; 
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1, h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 77vh;
+    margin-top: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker Green */
+    transform: translateY(-2px);
+}
+
+.button:active {
+    background-color: #3e8e41; /* Dark Green */
+    transform: translateY(1px);
+}
+
+@media (min-width: 768px) {
+    .button {
+        font-size: 20px;
+        min-width: 160px;
+        padding: 16px 24px;
+    }
+}
